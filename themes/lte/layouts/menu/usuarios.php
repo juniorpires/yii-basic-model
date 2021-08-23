@@ -1,6 +1,8 @@
 <?php
 
-return [
+return [ 
+     
+          [
                         'label' => 'Usuários',
                         'icon' => 'fa fa-users',
                         'url' => '#',
@@ -12,4 +14,5 @@ return [
                                         
                                    
                                    ]
-                         ];
+          ]
+];

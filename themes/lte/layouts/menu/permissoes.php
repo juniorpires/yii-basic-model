@@ -1,6 +1,7 @@
 <?php
 
 return [
+          [
                         'label' => 'Permissões',
                         'icon' => 'fa fa-lock',
                         'url' => '#',
@@ -13,4 +14,5 @@ return [
                                         
                                    
                                    ]
-                         ];
+          ]
+];
