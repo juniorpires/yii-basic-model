@@ -22,7 +22,7 @@ After download or clone:
         'components' => [
                 'db' => [
                     'class' => 'yii\db\Connection',
-                    'dsn' => 'mysql:host=127.0.0.1;dbname=name',
+                    'dsn' => 'pgsql:host=localhost;port=5432;dbname=name',
                     'username' => 'root',
                     'password' => '',
                     'charset' => 'utf8',

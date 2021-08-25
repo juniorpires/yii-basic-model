@@ -53,14 +53,14 @@ use yii\helpers\Html;
                                <?= Html::a(
                                     'Sair',
                                     ['/user/security/logout'],
-                                    ['data-method' => 'post', 'class' => 'btn btn-default btn-flat']
+                                    ['data-method' => 'post', 'class' => 'btn btn-danger btn-flat']
                                 ) ?>
                             </div>
                             <div class="pull-right">
                                 <?= Html::a(
                                     'Configurações',
                                     ['/user/settings/account'],
-                                    ['data-method' => 'post', 'class' => 'btn btn-default btn-flat']
+                                    ['data-method' => 'post', 'class' => 'btn btn-primary btn-flat']
                                 ) ?>
                             </div>
                         </li>

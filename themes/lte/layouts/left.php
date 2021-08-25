@@ -1,6 +1,8 @@
 <?php
 
 use app\helpers\RenderWidget;
+use yii\helpers\Html;
+
 ?>
 <aside class="main-sidebar">
 
@@ -27,6 +29,15 @@ use app\helpers\RenderWidget;
         //}
         ?>
 
+<span class="fa fa-sign-out fa-lg" aria-hidden="true" style="padding-left: 20px; color:white"></span>
+            <?php if(!Yii::$app->user->isGuest){
+                echo Html::a(
+                                    'Sair',
+                                    ['/user/security/logout'],
+                                    ['data-method' => 'post', 'class' => 'btn', 'style'=>'color:white; font-size:12pt']
+                        ); 
+            }?>
+            
     </section>
 
 </aside>
