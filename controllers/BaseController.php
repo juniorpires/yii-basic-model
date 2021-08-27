@@ -43,7 +43,7 @@ abstract class BaseController extends Controller{
     public function factoryActionName() {
         //$this->get
         
-        return $this->getModelName().yii::$app->controller->action->id;
+        return $this->getModelName().ucfirst(yii::$app->controller->action->id);
     }
 
     /**
@@ -56,7 +56,7 @@ abstract class BaseController extends Controller{
     }
     
     public function actionPermissionDenied(){
-        return $this->render('@common/views/base/deny');
+        return $this->render('@app/views/base/deny');
     }
     
     public static function hasRole($role) {
